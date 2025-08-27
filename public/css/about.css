@@ -1,0 +1,114 @@
+.header{
+    height: auto;
+    text-align: left;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.4)),
+                    url(/images/buildings.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.blue-button {
+  background-color: #1E3A8A;
+  border-radius: 0;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+}
+
+.blue-button:hover {
+  background-color: #26418a;
+}
+
+.mission{
+    color: white;
+    background-color: #1E3A8A;
+    height: auto;
+}
+
+.styled-mission{ 
+    text-align: right;
+}
+.styled-mission-2{
+    border-left: 8px solid black;
+}
+
+.vision{
+    height: auto;
+    color: white;
+    padding: 80px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                    url(/images/building3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.styled-vision{
+    border-left: 8px solid rgb(255, 255, 255);
+}
+
+.values{
+    height: 400px;
+    padding: 80px;
+}
+
+.staff {
+    height: auto;
+    padding: 80px;
+}
+
+.person,
+.person-2,
+.person-3,
+.person-4 {
+    filter: grayscale(100%);
+    background-size: cover;
+    background-position: center;
+    padding-top: 250px;
+    margin-bottom: 50px;
+    color: white; 
+    height: 300px; /* Set a flexible height */
+    width: 100%; /* Take full width within container */
+    /* margin-bottom: 20px; Add spacing between items */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    transition: filter 0.3s ease; /* Optional: Add hover effect */
+}
+
+.person {
+    background-image: url('/images/ceo1.jpg');
+}
+
+/* Add hover effect for interaction */
+.person:hover,
+.person-2:hover,
+.person-3:hover,
+.person-4:hover {
+    filter: grayscale(0%);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .person,
+    .person-2,
+    .person-3,
+    .person-4 {
+        height: 200px; /* Smaller height for smaller screens */
+        padding-top: 250px; /* Adjust padding */
+        padding-bottom: 50px;
+        color: rgb(255, 255, 255);
+    }
+}
+
+@media (max-width: 480px) {
+    .person,
+    .person-2,
+    .person-3,
+    .person-4 {
+        height: 150px; /* Even smaller for extra small screens */
+        padding: 100px;
+        color: transparent;
+    }
+}
