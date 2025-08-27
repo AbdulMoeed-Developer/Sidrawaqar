@@ -20,20 +20,21 @@
 }
 
 .responsive-text {
-  letter-spacing: 2.5px; /* default (small screens) */
+  letter-spacing: 0.5px; /* default small screens */
 }
 
-@media (max-width: 768px) { /* md */
+@media (min-width: 769px) { /* md+ */
   .responsive-text {
-    letter-spacing: normal;
+    letter-spacing: 1px;
   }
 }
 
-@media (max-width: 1200px) { /* xl */
+@media (min-width: 1201px) { /* xl+ */
   .responsive-text {
     letter-spacing: 1.5px;
   }
 }
+
 
 
 </style>
@@ -46,7 +47,7 @@
       <a class="navbar-brand ms-2 fs-normal text-center" href="/" style="font-family: sans-serif;">
         <b class="fs-4 fw-bold">SIDRA WAQAR</b>
         <br>
-        <small class="fs-6 responsive-text">ENTERPRISE LLC</small>
+        <small class="fs-6 responsive-text">ENTERPRISES LLC</small>
       </a>
     </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
